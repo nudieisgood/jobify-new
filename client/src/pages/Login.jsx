@@ -5,12 +5,12 @@ import {
   Link,
   useNavigate,
 } from "react-router-dom";
-import customFetch from "../../utilis/customFetch";
-import { FormRow } from "../../components";
+import customFetch from "../utilis/customFetch";
+import { FormRow } from "../components";
 import { toast } from "react-toastify";
 
-import Wrapper from "../../assets/styledComponents/LoginAndRegister";
-import { Logo } from "../../components";
+import Wrapper from "../assets/styledComponents/LoginAndRegister";
+import { Logo } from "../components";
 
 export const action = async ({ request }) => {
   const formData = await request.formData();

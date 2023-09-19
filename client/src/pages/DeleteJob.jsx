@@ -1,6 +1,6 @@
 import { toast } from "react-toastify";
 import { redirect } from "react-router-dom";
-import customFetch from "../../utilis/customFetch";
+import customFetch from "../utilis/customFetch";
 
 export const action = async ({ params }) => {
   const { id } = params;

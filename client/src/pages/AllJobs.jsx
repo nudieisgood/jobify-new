@@ -1,11 +1,11 @@
-import customFetch from "../../utilis/customFetch";
+import customFetch from "../utilis/customFetch";
 import { useLoaderData } from "react-router-dom";
 import {
   JobPaginationContainer,
   JobsContainer,
   SearchJobContainer,
-} from "../../components";
-import checkIsLoggined from "../../utilis/checkIsLoggined";
+} from "../components";
+import checkIsLoggined from "../utilis/checkIsLoggined";
 
 export const loader = async ({ request }) => {
   const queryEntriesArr = [...new URL(request.url).searchParams.entries()];

@@ -1,8 +1,8 @@
-import customFetch from "../../utilis/customFetch";
+import customFetch from "../utilis/customFetch";
 import { toast } from "react-toastify";
 import { Form, redirect, useNavigation, useLoaderData } from "react-router-dom";
-import Wrapper from "../../assets/styledComponents/FormContainer";
-import { FormRowSelect, FormRow } from "../../components";
+import Wrapper from "../assets/styledComponents/FormContainer";
+import { FormRowSelect, FormRow } from "../components";
 
 const JOB_STATUS = {
   PENDING: "pending",

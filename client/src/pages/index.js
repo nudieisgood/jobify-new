@@ -1,13 +1,13 @@
-import AddJob from "./JobPages/AddJob";
-import AllJobs from "./JobPages/AllJobs";
-import DeleteJob from "./JobPages/DeleteJob";
-import EditJob from "./JobPages/EditJob";
+import AddJob from "./AddJob";
+import AllJobs from "./AllJobs";
+import DeleteJob from "./DeleteJob";
+import EditJob from "./EditJob";
 
-import Admin from "./userPages/Admin";
-import Login from "./userPages/Login";
-import Profile from "./userPages/Profile";
-import Register from "./userPages/Register";
-import Stats from "./userPages/Stats";
+import Admin from "./Admin";
+import Login from "./Login";
+import Profile from "./Profile";
+import Register from "./Register";
+import Stats from "./Stats";
 
 import DashboardLayout from "./DashboardLayout";
 import Error from "./Error";

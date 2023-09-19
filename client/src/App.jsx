@@ -16,19 +16,19 @@ import {
 } from "./pages";
 
 //import actions
-import { action as loginAction } from "./pages/userPages/Login";
-import { action as registerAction } from "./pages/userPages/Register";
-import { action as addJobAction } from "./pages/JobPages/AddJob";
-import { action as editJobAction } from "./pages/JobPages/EditJob";
-import { action as deleteAction } from "./pages/JobPages/DeleteJob";
-import { action as profileAction } from "./pages/userPages/Profile";
+import { action as loginAction } from "./pages/Login";
+import { action as registerAction } from "./pages/Register";
+import { action as addJobAction } from "./pages/AddJob";
+import { action as editJobAction } from "./pages/EditJob";
+import { action as deleteAction } from "./pages/DeleteJob";
+import { action as profileAction } from "./pages/Profile";
 
 //import loaders
-import { loader as allJobsLoader } from "./pages/JobPages/AllJobs";
-import { loader as editJobLoader } from "./pages/JobPages/EditJob";
-import { loader as statsLoader } from "./pages/userPages/Stats";
+import { loader as allJobsLoader } from "./pages/AllJobs";
+import { loader as editJobLoader } from "./pages/EditJob";
+import { loader as statsLoader } from "./pages/Stats";
 import { loader as dashboardLoader } from "./pages/DashboardLayout";
-import { loader as adminLoader } from "./pages/userPages/Admin";
+import { loader as adminLoader } from "./pages/Admin";
 
 const router = createBrowserRouter([
   {

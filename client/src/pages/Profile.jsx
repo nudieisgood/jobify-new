@@ -1,9 +1,9 @@
-import Wrapper from "../../assets/styledComponents/FormContainer";
+import Wrapper from "../assets/styledComponents/FormContainer";
 import { Form, useNavigation } from "react-router-dom";
-import { FormRow } from "../../components";
+import { FormRow } from "../components";
 import { toast } from "react-toastify";
-import customFetch from "../../utilis/customFetch";
-import { useDashboardContext } from "../DashboardLayout";
+import customFetch from "../utilis/customFetch";
+import { useDashboardContext } from "./DashboardLayout";
 
 export const action = async ({ request }) => {
   const formData = await request.formData();

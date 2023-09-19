@@ -1,7 +1,7 @@
 import { useLoaderData } from "react-router-dom";
-import customFetch from "../../utilis/customFetch";
+import customFetch from "../utilis/customFetch";
 import { toast } from "react-toastify";
-import { ChartsContainer, StatsContainer } from "../../components";
+import { ChartsContainer, StatsContainer } from "../components";
 
 export const loader = async () => {
   try {

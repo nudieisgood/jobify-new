@@ -1,8 +1,8 @@
-import customFetch from "../../utilis/customFetch";
+import customFetch from "../utilis/customFetch";
 import { toast } from "react-toastify";
 import { redirect, useLoaderData } from "react-router-dom";
-import Wrapper from "../../assets/styledComponents/Stats";
-import { StatItem } from "../../components";
+import Wrapper from "../assets/styledComponents/Stats";
+import { StatItem } from "../components";
 import { FaSuitcaseRolling, FaCalendarCheck } from "react-icons/fa";
 
 export const loader = async () => {

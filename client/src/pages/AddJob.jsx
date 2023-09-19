@@ -1,9 +1,9 @@
-import Wrapper from "../../assets/styledComponents/FormContainer";
+import Wrapper from "../assets/styledComponents/FormContainer";
 import { Form, redirect, useNavigation } from "react-router-dom";
 import { toast } from "react-toastify";
 
-import { FormRow, FormRowSelect } from "../../components";
-import customFetch from "../../utilis/customFetch";
+import { FormRow, FormRowSelect } from "../components";
+import customFetch from "../utilis/customFetch";
 
 const JOB_STATUS = {
   PENDING: "pending",
