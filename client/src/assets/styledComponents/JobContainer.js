@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 const Wrapper = styled.section`
+  margin-top: 1rem;
   .jobs {
     display: grid;
     grid-template-columns: 1fr;

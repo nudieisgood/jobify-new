@@ -2,6 +2,7 @@ import Wrapper from "../assets/styledComponents/FormContainer";
 import FormRow from "./FormRow";
 import FormRowSelect from "./FormRowSelect";
 import { useSubmit, Form, Link } from "react-router-dom";
+import { useState } from "react";
 
 const JOB_STATUS = {
   PENDING: "pending",
@@ -25,6 +26,17 @@ const JOB_SORT_BY = {
 const SearchJobContainer = ({ searchValues }) => {
   const { search, jobStatus, jobType, sort } = searchValues;
 
+  const debounce = (fn) => {
+    let timeout;
+    return (e) => {
+      clearTimeout(timeout);
+      const form = e.currentTarget.form;
+      timeout = setTimeout(() => {
+        fn(form);
+      }, 1000);
+    };
+  };
+
   const submit = useSubmit();
   return (
     <Wrapper>
@@ -34,12 +46,12 @@ const SearchJobContainer = ({ searchValues }) => {
           <FormRow
             defaultValue={search}
             name="search"
-            labelText="search company"
+            labelText="job position"
             type="search"
             required={false}
-            onChange={(e) => {
-              submit(e.currentTarget.form);
-            }}
+            onChange={debounce((form) => {
+              submit(form);
+            })}
           />
           <FormRowSelect
             name="jobStatus"
