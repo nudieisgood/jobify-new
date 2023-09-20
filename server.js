@@ -4,6 +4,8 @@ import cookieParser from "cookie-parser";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
 import { StatusCodes } from "http-status-codes";
+import helmet from "helmet";
+import mongoSanitize from "express-mongo-sanitize";
 
 import cloudinary from "cloudinary";
 
@@ -25,6 +27,15 @@ if (process.env.NODE_ENV !== "production") {
   console.log("dev mode");
 }
 const app = express();
+app.use(
+  helmet.contentSecurityPolicy({
+    useDefaults: true,
+    directives: {
+      "img-src": ["'self'", "https: data:"],
+    },
+  })
+);
+app.use(mongoSanitize());
 app.use(express.json());
 app.use(cookieParser());
 
